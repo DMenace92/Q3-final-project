@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 class App extends Component {
+  state = {
+    comic: []
+  }
+  
+
+  async componentDidMount (){
+    const res = await fetch('https://gateway.marvel.com:443/v1/public/comics?apikey=1505e799a8ca64cdcca6038e57ea8c66')
+    const json = await res.json()
+    this.setState({comic: json})
+    console.log(json)
+  }
+
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+       
       </div>
     );
   }

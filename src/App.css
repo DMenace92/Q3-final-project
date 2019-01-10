@@ -1,16 +1,21 @@
-
+.Main{
+  background-image:url('DS7834_enl.jpg')!important;
+}
 .container{
-  background-color:gray;
-  height: 91vh !important;
-  width:100vw;
-  /* display:flex;*/
-  float:left; 
+  background-color:lightgray;
+  opacity: .90;
+  margin-left:15.2%;
+  height: 91vh;
+  width:70vw;
+  /* display:flex;
+  float;  */
   overflow-x: scroll;
   
 
   /* border: 1px solid green; */
 }
 .wrapper{
+  
   margin:2vw;
   border:5px solid black;
 }
@@ -34,7 +39,7 @@
 .inputSearch{
   position: absolute;
   top:1vh;
-  right:50vw;
+  right:44.3vw;
 }
 .addButton{
  margin-left:45%;
@@ -50,5 +55,5 @@
 .cartButton{
   position: absolute;
   right:.5%;
-  top:.5%
+  top:.7%;
 }

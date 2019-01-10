@@ -22,8 +22,9 @@ const ComicsList = props => {
                 <CardTitle className='titleText'>{comic.title}</CardTitle>
                 
                 <CardImg className="image" src={ fillerImg(comic.images[0]) || unnamed  }/>
-                <CardTitle>{comic.pageCount} Pages</CardTitle>
-                <CardTitle>${comic.prices[0].price}</CardTitle>
+                <CardTitle className='comicText'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit maxime doloremque voluptatum nulla necessitatibus quam porro corrupti dicta id aspernatur maiores exercitationem est voluptate, amet iste, optio distinctio debitis quos!</CardTitle>
+                <CardTitle className='pageText'>{comic.pageCount} Pages</CardTitle>
+                <CardTitle className="priceText">${comic.prices[0].price}</CardTitle>
                 <Button className="addButton" onClick={()=> props.addComic(comic.id)}>Add To Cart</Button>
                
             </div>

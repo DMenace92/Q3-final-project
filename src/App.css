@@ -15,7 +15,7 @@
   /* border: 1px solid green; */
 }
 .wrapper{
-  
+  height:40vh;
   margin:2vw;
   border:5px solid black;
 }
@@ -25,7 +25,6 @@
   width:100vw;
 }
 .image{
-  
   
   /* margin:5vh; */
   margin:5px;
@@ -42,8 +41,13 @@
   right:44.3vw;
 }
 .addButton{
- margin-left:45%;
- margin-bottom:2%;
+ 
+ /* margin-left:45%; */
+ position: relative;
+ left:85%;
+ bottom: 28vh;
+
+ /* margin-bottom:2%; */
   
 }
 #cartInfo{
@@ -56,4 +60,22 @@
   position: absolute;
   right:.5%;
   top:.7%;
+}
+.comicText{
+width:40vw;
+position: relative;
+left:26vh;
+bottom:27vh;
+}
+.pageText{
+  position: relative;
+  left:50%;
+  bottom:45%;
+}
+.priceText{
+  position: relative;
+  left:87%;
+  bottom:75%;
+  font-size: 25px;
+
 }
